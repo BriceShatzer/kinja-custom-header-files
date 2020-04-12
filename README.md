@@ -1,8 +1,8 @@
 ## Kinja Custom Header files
 
-<!-- To read a more comprehensive writeup & explanation, please visit [case study](https://briceshatzer.com/blog/2019-12-19-Kinja-Custom-Header-Case-Study)-->
+To read a more comprehensive writeup & explanation, please visit the [case study](https://briceshatzer.com/blog/2020-03-20-Kinja-Custom-Header-Case-Study).
 
-General notes: 
+Some general notes: 
 - Uses [Flow](https://flow.org/)  
 - Built with [styled components](https://styled-components.com/)
 
