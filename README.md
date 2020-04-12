@@ -12,8 +12,11 @@ The whole application is written in Isomorphic JavaScript, with the page intiall
 On page load, `hydrateCustomHeader()` is then called to intialize all of the edit functionality, if required. 
 
 
-```
-<!-- standard-kinja-layout.js -->
+```js
+// standard-kinja-layout.js
+
+function StandardKinjaLayout(props: Props) {
+// ... 
 return (
     <LayoutProvider blog={blog} features={features}>
         <React.Fragment>
@@ -37,7 +40,7 @@ return (
                         {!isUncategorizedCategory && <CurationInitWrapper className="js_curation-toolbar-container" />}
                     </React.Fragment>
                 </InitWrappers>
-<!-- .... --->                
+// ... 
 
 ```  
 
