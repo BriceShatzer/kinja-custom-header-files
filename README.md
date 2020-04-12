@@ -11,10 +11,8 @@ The whole application is written in Isomorphic JavaScript, with the page intiall
 
 On page load, `hydrateCustomHeader()` is then called to intialize all of the edit functionality, if required. 
 
-
+**standard-kinja-layout.js**
 ```js
-// standard-kinja-layout.js
-
 function StandardKinjaLayout(props: Props) {
 // ... 
 return (
@@ -41,15 +39,13 @@ return (
                     </React.Fragment>
                 </InitWrappers>
 // ... 
-
 ```  
-
-```
-<!-- kinja-components/components/header/header.js -->
+**kinja-components/components/header/header.js**
+```js
 const HeaderContainer = ({
-    <!-- ... -->
+    // ...
 })=>{
-    <!-- ... -->
+    // ...
     const HeaderBar = showHeaderBar ? (
 		<CustomHeaderSecondaryContainer className='js_custom-header-editor-container'>
 			<CustomHeader
@@ -61,20 +57,20 @@ const HeaderContainer = ({
 			/>
 		</CustomHeaderSecondaryContainer>
 	) : null;
-    <!-- ... -->
+    // ...
     return (
-        <! -- ... -->
+        // ... 
 		<ScrollListener>
 			{({childrenRef, secondaryRef, showScrollback}) =>
 				<Container ref={childrenRef} isOpen={isOpen} className={cx('js_header-container', {open: isOpen})}>
-                    <!--- ... -->
+                    // ...
 					<GlobalNav isOpen={isOpen} className={cx('js_global-nav', {open: isOpen})}>
 						<CoreNav wideRail={features.wide_rail}>
-                            <-- ... --->
+                            // ...
 						</CoreNav>
 						<div className="header-bar">
 							{HeaderBar && React.cloneElement(HeaderBar, { ref: secondaryRef}) }
 						</div>
 					</GlobalNav>
-
+// ...
 ```

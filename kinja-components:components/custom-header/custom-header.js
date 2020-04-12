@@ -447,7 +447,6 @@ class CustomHeader extends React.Component<CustomHeaderProps, State> {
 						toggleHandler={event=>this.toggleEditMode(event)}
 						isEditMode={this.state.isEditMode}
 						saveHandler={
-							// $FlowFixMe
 							()=>this.saveCustomHeader().then(res => updateOverhangOnCustomHeaderPropsChange(res))
 						}
 					/>

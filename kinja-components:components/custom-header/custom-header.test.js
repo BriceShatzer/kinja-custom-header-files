@@ -65,7 +65,6 @@ describe('<CustomHeader/> rendering', () => {
 			expect(primaryElement.length).toBe(1);
 			expect(primaryElement.text() === testString);
 			expect(primaryElement.props.textColor === testColor);
-			// $FlowFixMe
 			expect(primaryElement).toHaveStyleRule('color', testColor);
 		});
 	});
@@ -92,7 +91,6 @@ describe('<CustomHeader/> rendering', () => {
 		[testJSON_categoryId, testJSON_storyTypeId].forEach(json => {
 			const wrapper = mountThemedCustomHeader(json);
 			const secondaryElement = wrapper.find('div div');
-			// $FlowFixMe
 			expect(secondaryElement).toHaveStyleRule('color', testColor);
 			expect(secondaryElement.length).toBe(1);
 			expect(secondaryElement.text() === testString);
@@ -136,7 +134,6 @@ describe('<CustomHeader/> rendering', () => {
 				const el = wrapper.find(`a[href="${linkObj.url}"]`);
 				expect(el.props.href  === linkObj.url);
 				expect(el.props.color  === linkObj.color);
-				// $FlowFixMe
 				expect(el).toHaveStyleRule('color', testColor);
 				expect(el.getDOMNode().innerText  === linkObj.text);
 			});
@@ -159,7 +156,6 @@ describe('<CustomHeader/> rendering', () => {
 			const wrapper = mountThemedCustomHeader(json);
 			const backgroundContainer = wrapper.find('.hydrated');
 			expect(wrapper.exists());
-			// $FlowFixMe
 			expect(backgroundContainer).toHaveStyleRule('background-color', testColor);
 		});
 	});
@@ -174,9 +170,7 @@ describe('<CustomHeader/> rendering', () => {
 			const wrapper = mountThemedCustomHeader(json);
 			const backgroundContainer = wrapper.find('.hydrated');
 			expect(wrapper.exists());
-			// $FlowFixMe
 			expect(backgroundContainer).toHaveStyleRule('background',`url(${imageUrl(testImage.id, 'WideSuperLargeAuto', testImage.format)})`);
-			// $FlowFixMe
 			expect(backgroundContainer).toHaveStyleRule('background-size', 'cover');
 		});
 	});
