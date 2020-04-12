@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomHeaderToolbar /> should render one button in closed mode 1`] = `
+<customHeader-toolbar__CustomHeaderToolbarWrapper>
+  <OpenButton
+    onClick={[Function]}
+  />
+</customHeader-toolbar__CustomHeaderToolbarWrapper>
+`;
+
+exports[`<CustomHeaderToolbar /> should render one button in edit mode 1`] = `
+<customHeader-toolbar__CustomHeaderToolbarWrapper>
+  <SaveButton
+    onClick={[Function]}
+  />
+  <CloseButton
+    onClick={[Function]}
+  />
+</customHeader-toolbar__CustomHeaderToolbarWrapper>
+`;
