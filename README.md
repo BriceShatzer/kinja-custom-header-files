@@ -1,4 +1,4 @@
-**Kinja Custom Header files**
+## Kinja Custom Header files
 
 <!-- To read a more comprehensive writeup & explanation, please visit [case study](https://briceshatzer.com/blog/2019-12-19-Kinja-Custom-Header-Case-Study)-->
 
