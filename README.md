@@ -14,6 +14,7 @@ On page load, `hydrateCustomHeader()` is then called to intialize all of the edi
 
 ```js
 // --- standard-kinja-layout.js ---
+
 function StandardKinjaLayout(props: Props) {
 // ... 
 return (
@@ -43,7 +44,8 @@ return (
 ```  
 
 ```js
-// --- kinja-components/components/header/header.js --- 
+// --- kinja-components/components/header/header.js ---
+
 const HeaderContainer = ({
     // ...
 })=>{
