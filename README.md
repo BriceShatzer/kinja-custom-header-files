@@ -11,8 +11,9 @@ The whole application is written in Isomorphic JavaScript, with the page intiall
 
 On page load, `hydrateCustomHeader()` is then called to intialize all of the edit functionality, if required. 
 
-**standard-kinja-layout.js**
+
 ```js
+// --- standard-kinja-layout.js ---
 function StandardKinjaLayout(props: Props) {
 // ... 
 return (
@@ -40,8 +41,9 @@ return (
                 </InitWrappers>
 // ... 
 ```  
-**kinja-components/components/header/header.js**
+
 ```js
+// --- kinja-components/components/header/header.js --- 
 const HeaderContainer = ({
     // ...
 })=>{
