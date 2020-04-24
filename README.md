@@ -7,9 +7,9 @@ Some general notes:
 - Built with [styled components](https://styled-components.com/)
 
 
-The whole application is written in Isomorphic JavaScript, with the page intially being constructed shown in the snippets below. 
+The whole application is written in Isomorphic JavaScript, with the intial page construction shown in the snippets below. 
 
-On page load, `hydrateCustomHeader()` is then called to intialize all of the edit functionality, if required. 
+On page load, `hydrateCustomHeader()` is then called to intialize all of the edit functionality if required. 
 
 
 ```js
